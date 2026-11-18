@@ -1,0 +1,29 @@
+name: IgrzyskaSmierciMinecraft10k
+version: 1.0.0
+main: pl.igrzyska.smierci.IgrzyskaSmierci
+api-version: "1.20"
+description: Igrzyska śmierci Minecraft 10k - whitelista, logowanie na ID i strefa startowa.
+commands:
+  zaloguj:
+    description: Logowanie nowego gracza
+    usage: /zaloguj <id zaproszenia> <id gracza> <id sesji>
+  playeradd:
+    description: Dodaje gracza do whitelisty i generuje jego ID
+    usage: /playeradd <nick>
+    permission: igrzyska.admin
+  playerremove:
+    description: Usuwa gracza z whitelisty
+    usage: /playerremove <nick>
+    permission: igrzyska.admin
+  spawndlanowychgraczy:
+    description: Ustawia miejsce, w którym czekają niezalogowani gracze
+    usage: /spawndlanowychgraczy
+    permission: igrzyska.admin
+  spawndlagraczy:
+    description: Ustawia miejsce, do którego trafia gracz po zalogowaniu
+    usage: /spawndlagraczy
+    permission: igrzyska.admin
+permissions:
+  igrzyska.admin:
+    description: Komendy operatora pluginu
+    default: op

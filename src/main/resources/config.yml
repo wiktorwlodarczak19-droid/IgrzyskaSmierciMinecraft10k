@@ -1,0 +1,8 @@
+# Czy plugin ma własną whitelistę (gracz spoza listy nie wejdzie na serwer)
+whitelist: true
+# Czy operatorzy pomijają logowanie (wyłącz, jeśli chcesz testować jako OP)
+ops-pomijaja-logowanie: true
+# false = /zaloguj tylko raz, true = przy każdym wejściu na serwer
+wymagaj-logowania-przy-kazdym-wejsciu: false
+# Po tylu błędnych próbach gracz zostanie wyrzucony
+max-prob-logowania: 5
