@@ -1,7 +1,7 @@
 name: IgrzyskaSmierciMinecraft10k
 version: 1.0.0
 main: pl.igrzyska.smierci.IgrzyskaSmierci
-api-version: "1.20"
+api-version: "1.21"
 description: Igrzyska śmierci Minecraft 10k - whitelista, logowanie na ID i strefa startowa.
 commands:
   zaloguj:

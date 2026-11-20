@@ -273,11 +273,7 @@ public class IgrzyskaSmierci extends JavaPlugin implements Listener {
     private void zablokuj(Player p) {
         niezalogowani.add(p.getUniqueId());
         p.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, Integer.MAX_VALUE, 0, false, false, false));
-        PotionEffectType slow = PotionEffectType.getByName("SLOWNESS");
-        if (slow == null) slow = PotionEffectType.getByName("SLOW");
-        if (slow != null) {
-            p.addPotionEffect(new PotionEffect(slow, Integer.MAX_VALUE, 255, false, false, false));
-        }
+        p.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, Integer.MAX_VALUE, 255, false, false, false));
         p.setInvulnerable(true);
         p.teleport(spawn("nowi"));
         pokazTytul(p);
@@ -286,9 +282,7 @@ public class IgrzyskaSmierci extends JavaPlugin implements Listener {
 
     private void zdejmijBlokady(Player p) {
         p.removePotionEffect(PotionEffectType.BLINDNESS);
-        PotionEffectType slow = PotionEffectType.getByName("SLOWNESS");
-        if (slow == null) slow = PotionEffectType.getByName("SLOW");
-        if (slow != null) p.removePotionEffect(slow);
+        p.removePotionEffect(PotionEffectType.SLOWNESS);
         p.setInvulnerable(false);
     }
 

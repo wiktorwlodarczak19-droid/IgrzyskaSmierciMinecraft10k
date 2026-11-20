@@ -1,6 +1,6 @@
 # Igrzyska śmierci Minecraft 10k
 
-Plugin Spigot/Paper 1.20+ z własną whitelistą i logowaniem nowych graczy na ID.
+Plugin Spigot/Paper 1.21.11 z własną whitelistą i logowaniem nowych graczy na ID.
 
 ## Komendy
 | Komenda | Kto | Opis |
